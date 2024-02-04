@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(./fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url(./fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.post-block-container {
+  display: flex;
+  width: 795px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.post-block-image {
+  width: 380px;
+  height: auto;
+  padding-left: 15px;
+}
+
+.post-block-body {
+  width: 370px;
+}
+
+.post-block-tags {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.post-block-tag {
+  display: inline-block;
+
+  padding-left: 0;
+  margin-right: 20px;
+}
+
+.post-block-tag-link {
+  font-size: 14px;
+  font-family: "OpenSansBold";
+  color: #b59f5b;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.post-block-heading {
+  font-family: "OpenSansBold";
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.post-block-heading-link {
+  text-decoration: none;
+  color: black;
+}
+
+.post-block-info-list {
+  display: inline-block;
+}
+
+.post-block-date {
+  font-family: "OpenSans";
+  font-size: 12px;
+  color: #888888;
+  margin-right: 15px;
+}
+
+.post-block-author {
+  font-family: "OpenSansBold";
+  font-size: 12px;
+  color: black;
+}
+
+.post-block-text {
+  font-family: "OpenSans";
+  font-size: 15px;
+  line-height: 22px;
+  color: black;
+  text-align: justify;
+  margin-top: 45px;
+}
+
+.post-block-info {
+  padding-left: 0;
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  top: 0px;
+  width: 1660px;
+  height: auto;
+  background-image: url(./banner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 145px;
+  color: white;
+}
+
+.header::before {
+  content: "";
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+
+  left: 245px;
+  right: 245px;
+  width: 1170px;
+  z-index: 2;
+}
+
+.header-logo {
+  width: 180px;
+  height: auto;
+}
+
+.nav-menu-list-item {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 35px;
+  font-size: 13px;
+}
+
+.nav-menu-list-link:link {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0px;
+  font-family: "Opensans";
+}
+
+.page-title {
+  margin-top: 120px;
+  margin-left: 490px;
+  margin-right: 490px;
+}
+
+.page-title-text {
+  font-family: "OpenSansBold";
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 75px;
+  z-index: 2;
+  margin: 0;
+}
+
+.nav-menu-list {
+  margin: 0;
+}
+
+.site-footer {
+  background-color: #f4f7f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer-item {
+  display: inline-block;
+}
+
+.footer-link {
+  height: 18px;
+  width: 18px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-link-text {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.footer-link1 {
+  background-image: url(./social/001-pinterest.svg);
+}
+
+.footer-link2 {
+  background-image: url(./social/002-facebook-logo.svg);
+}
+
+.footer-link3 {
+  background-image: url(./social/003-tumblr.svg);
+}
+
+.footer-link4 {
+  background-image: url(./social/004-twitter.svg);
+}
+
+.footer-link5 {
+  background-image: url(./social/005-instagram.svg);
+}
