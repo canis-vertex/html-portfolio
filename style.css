@@ -1,0 +1,441 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(./fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url(./fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.page-body-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 130px;
+  margin-left: 130px;
+  margin-top: 65px;
+}
+
+.hidden-description {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.aside-heading {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "OpenSansBold";
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.aside-heading::after {
+  content: "";
+  position: relative;
+  display: block;
+  background-color: #b59f5b;
+  width: 66px;
+  height: 4px;
+  margin: 10px 0px 0px;
+  left: 102px;
+}
+
+.aside-new-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-new-post {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.aside-new-post-image {
+  width: 60px;
+}
+
+.aside-new-post-info {
+  width: 180px;
+}
+
+.aside-new-post-date {
+  font-size: 12px;
+}
+
+.aside-new-post-title-link {
+  font-family: "OpenSansBold";
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.aside-new-post-title-link:hover,
+.aside-topic-link:hover,
+.post-block-heading-link:hover {
+  color: #b59f5b;
+}
+
+.aside-new-post-search-form {
+  display: flex;
+}
+
+.aside-new-post-search {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #f4f7f6;
+  border: none;
+  width: 220px;
+  height: 50px;
+  padding: 15px 20px;
+  font-family: initial;
+  margin-bottom: 60px;
+}
+
+.aside-new-post-search:focus {
+  outline: 1px solid #b59f5b;
+  outline-offset: -1px;
+}
+
+.aside-subscribe-field {
+  box-sizing: border-box;
+  width: 270px;
+  height: 45px;
+  border: none;
+  background-color: #f4f7f6;
+  padding: 15px 20px;
+  font-family: initial;
+}
+
+.aside-new-post-search-button {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url(./search.svg);
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #b59f5b;
+  border: none;
+  cursor: pointer;
+}
+
+.aside-new-post-search-button:hover {
+  background-color: #323232;
+}
+
+.aside-subscribe-field:focus {
+  outline: 1px solid #b59f5b;
+}
+
+.aside-subscribe-button {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #b59f5b;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 270px;
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.aside-subscribe-button:hover {
+  background-color: #323232;
+}
+
+.aside-tags-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.aside-tag-link,
+.aside-topic-link {
+  text-decoration: none;
+  font-family: "OpenSansBold";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: black;
+}
+.aside-tag {
+  display: inline-block;
+  outline: 2px #888888 solid;
+  padding: 4px;
+  margin: 5px;
+}
+
+.aside-tag:hover {
+  outline: 2px #b59f5b solid;
+}
+
+.aside-topics-list {
+  padding: 0px;
+  list-style: none;
+  margin-top: -30px;
+}
+
+.aside-topic {
+  font-family: "OpenSansBold";
+  font-size: 14px;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.aside-topic-counter {
+  color: #b59f5b;
+  font-size: 12px;
+  position: relative;
+  left: 5px;
+  bottom: 4px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.post-block-container {
+  display: flex;
+  width: 795px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.post-block-image {
+  width: 380px;
+  height: auto;
+}
+
+.post-block-body {
+  width: 370px;
+}
+
+.post-block-tags {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.post-block-tag {
+  display: inline-block;
+
+  padding-left: 0;
+  margin-right: 20px;
+}
+
+.post-block-tag-link {
+  font-size: 14px;
+  font-family: "OpenSansBold";
+  color: #b59f5b;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.post-block-tag-link:hover {
+  text-decoration: underline;
+}
+
+.post-block-heading {
+  font-family: "OpenSansBold";
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.post-block-heading-link {
+  text-decoration: none;
+  color: black;
+}
+
+.post-block-info-list {
+  display: inline-block;
+}
+
+.post-block-date {
+  font-family: "OpenSans";
+  font-size: 12px;
+  color: #888888;
+  margin-right: 15px;
+}
+
+.post-block-author {
+  font-family: "OpenSansBold";
+  font-size: 12px;
+  color: black;
+}
+
+.post-block-text {
+  font-family: "OpenSans";
+  font-size: 15px;
+  line-height: 22px;
+  color: black;
+  text-align: justify;
+  margin-top: 45px;
+}
+
+.post-block-info {
+  padding-left: 0;
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  top: 0px;
+  height: auto;
+  background-image: url(./banner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 120px;
+  color: white;
+}
+
+.header::before {
+  content: "";
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  z-index: 2;
+}
+
+.header-logo {
+  width: 180px;
+  height: auto;
+}
+
+.nav-menu-list-item {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 35px;
+  font-size: 13px;
+}
+
+.nav-menu-list-link:link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu-list-link:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0px;
+  font-family: "Opensans";
+}
+
+.page-title {
+  margin-top: 120px;
+  margin-left: 245px;
+  margin-right: 245px;
+}
+
+.page-title-text {
+  font-family: "OpenSansBold";
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 75px;
+  z-index: 2;
+  margin: 0;
+}
+
+.nav-menu-list {
+  margin: 0;
+}
+
+.site-footer {
+  background-color: #f4f7f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer-item {
+  display: inline-block;
+}
+
+.footer-link {
+  height: 18px;
+  width: 18px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-link-text {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.footer-link1 {
+  background-image: url(./social/001-pinterest.svg);
+}
+
+.footer-link2 {
+  background-image: url(./social/002-facebook-logo.svg);
+}
+
+.footer-link3 {
+  background-image: url(./social/003-tumblr.svg);
+}
+
+.footer-link4 {
+  background-image: url(./social/004-twitter.svg);
+}
+
+.footer-link5 {
+  background-image: url(./social/005-instagram.svg);
+}
